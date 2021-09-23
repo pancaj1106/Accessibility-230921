@@ -1,0 +1,1096 @@
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/nova/theme.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeflex/primeflex.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  /* make sure the body does not have a margin */
+  margin: 0;
+  /* this forces the body tag to fill the height of the window */
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #02083c;
+  font-size: 16px;
+}
+
+.p-fileupload-content {
+  display: none;
+}
+
+.p-fileupload .p-fileupload-buttonbar {
+  border: none;
+  background: none;
+}
+
+.p-component {
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.text-danger {
+  color: #d20020;
+}
+
+h1 {
+  font-size: 1.625rem;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin: 0.5rem 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+h4 {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+h5 {
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+h6 {
+  font-size: 0.65rem;
+  margin: 0.5rem 0;
+}
+
+.input-border {
+  border: 1px solid #808080;
+}
+
+.icon-color {
+  color: #1c798e;
+}
+
+.p-button:active,
+.p-button:focus {
+  border: transparent;
+  box-shadow: none;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.margin-right {
+  margin-right: 5px !important;
+}
+.margin-right-custom {
+  margin-right: 0.5em;
+}
+
+.margin {
+  margin: 2px 2px 2px 2px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.control-label {
+  font-size: 16px;
+  padding: 0 0 0 15px;
+}
+
+.error-label {
+  color: #d93c3d;
+}
+
+.p-inputtext.ng-dirty.ng-invalid {
+  border-color: #d93c3d;
+}
+
+.footer {
+  bottom: 0px;
+  background-color: #c6c5c5;
+  width: 100%;
+  line-height: 50px;
+}
+
+.page-layout > div {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 4px;
+}
+
+.page-layout {
+  /* the .app div needs to be AT LEAST 100% of the height of the window */
+  min-height: calc(100vh - 95px);
+  /* now that it is 100% the height, we 'pull' the footer up */
+  /* margin-bottom must be the same height as the footer height below */
+  margin: 0;
+}
+
+.base-table {
+  p-dropdown {
+    .p-dropdown {
+      min-width: 0;
+    }
+  }
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.p-datatable table {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  border: none;
+  background-color: #4f5377;
+  font-size: 1.15rem;
+  font-weight: normal;
+  padding: 0.25rem;
+  color: #ffffff;
+  vertical-align: top;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border: none !important;
+  padding: 0.25rem 0.45rem;
+  color: #02083c;
+  vertical-align: top;
+}
+
+.p-dropdown:not(.p-state-disabled):not(.p-state-focused) {
+  border-color: none !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-state-highlight,
+body
+  .p-dropdown-panel
+  .p-dropdown-items
+  .p-dropdown-item-group.p-state-highlight {
+  background-color: #1c798e;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover,
+.p-checkbox .p-checkbox-box[aria-checked="true"] {
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  color: black;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-state-highlight,
+body
+  .p-dropdown-panel
+  .p-dropdown-items
+  .p-dropdown-item-group.p-state-highlight {
+  background-color: #1c798e !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-state-active {
+  background-color: #1c798e !important;
+}
+
+.p-datatable .p-datatable-loading-icon {
+  font-size: 5em;
+  color: #1c798e !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.width-five {
+  width: 5%;
+}
+.width-forty {
+  width: 40%;
+}
+
+.width-eight {
+  width: 8%;
+}
+
+.width-twenty {
+  width: 20%;
+}
+
+.width-ten {
+  width: 10%;
+}
+
+.width-fifteen {
+  width: 15%;
+}
+
+.width-ninety {
+  width: 90%;
+}
+
+.width-seventy {
+  width: 70%;
+}
+
+.width-twenty-two {
+  width: 22%;
+}
+
+.whitespace {
+  margin-left: 2px;
+}
+
+.whitespace-5 {
+  margin-left: 5px;
+}
+
+.whitespace-top {
+  margin-top: 0.5rem;
+}
+
+.width-tweleve {
+  width: 12rem;
+}
+
+.width-twentyone {
+  width: 21rem;
+}
+
+.verticle-header-align {
+  vertical-align: baseline;
+}
+
+.exclamation-style {
+  font-size: 1rem;
+  padding-left: 10px;
+  color: red;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #1c798e;
+  border-color: #1c798e;
+  color: #ffffff;
+}
+
+.p-button.p-state-default.p-button-danger,
+body .p-buttonset.p-button-danger > .p-button.p-state-default {
+  background-color: none !important;
+  border: none !important;
+}
+
+.p-datatable .p-sortable-column:focus {
+  box-shadow: none !important;
+}
+
+body .p-datatable .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #dfdfdf;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+  color: #f9f9f9;
+}
+
+.small-button {
+  width: 100px;
+}
+
+.p-dialog .p-dialog-titlebar {
+  font-size: larger;
+}
+
+.p-dialog .p-dialog-content {
+  color: #02083c;
+}
+
+.p-dialog .p-dialog-header {
+  color: #02083c;
+}
+
+.p-col-2 {
+  width: 12.6667%;
+}
+
+.p-col-5 {
+  width: 39% !important;
+}
+
+.schoolDropdown {
+  display: inline;
+}
+
+.window-full-width {
+  padding: 0px;
+  margin: 0px;
+}
+
+.p-margin-top {
+  margin-top: 0px;
+}
+
+.base-table .p-dropdown .p-dropdown-label {
+  font-family: "Courier New" !important;
+  font-size: 15px !important;
+}
+
+.Courier-New-font .p-widget {
+  font-family: "Courier New" !important;
+  font-size: 15px !important;
+}
+
+.dashboard-font-white {
+  color: white;
+}
+
+.dashboard-font-black {
+  color: black;
+}
+
+.schooldashboard-grid-item {
+  background-color: teal;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  margin: 5px;
+  min-height: 200px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #282d59;
+}
+
+a:visited {
+  color: #580058;
+}
+
+.p-toast-detail {
+  white-space: pre-line;
+}
+
+body .p-menubar .p-menubar-root-list > .p-menu-separator {
+  border: 1px solid #c8c8c8;
+  border-width: 0 0 0 1px;
+}
+
+.hide {
+  display: none;
+}
+
+.p-togglebutton.p-button,
+.p-togglebutton.p-button.p-highlight,
+.p-button {
+  background-color: #02083c;
+  color: #fff;
+  border-color: #02083c;
+  border-radius: 0px;
+  min-width: 7.813rem;
+  max-width: 14.063rem;
+  height: 3rem;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: #02083c;
+  color: #fff;
+}
+
+.p-splitbutton .p-menu > li:hover,
+.p-menu .p-menuitem-link:not(.p-disabled):hover,
+.p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover,
+.p-togglebutton.p-button.p-highlight:hover,
+.p-button[label="Cancel"]:enabled:hover,
+.p-button[label="Close"]:enabled:hover,
+.p-button[ng-reflect-label="Cancel"]:enabled:hover,
+.p-button[ng-reflect-label="Close"]:enabled:hover,
+.p-button[label="Add another subject"]:enabled:hover,
+.p-button[label="Download Exclusions"]:enabled:hover,
+.p-button[label="Find and add a user"]:enabled:hover,
+.p-datepicker-trigger.p-button:enabled:hover,
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight:hover,
+.p-button:enabled:hover {
+  background-color: #00ffff;
+  border-color: #00ffff;
+  color: #02083c;
+}
+
+.p-button.p-button-icon-only {
+  height: auto;
+  min-width: 2.357rem;
+}
+
+a:focus-visible {
+  outline: none;
+}
+
+.p-menu .p-menuitem-link:focus,
+a:focus,
+.p-link:focus,
+.p-dropdown:focus,
+.p-listbox .p-listbox-list .p-listbox-item:focus,
+.p-listbox .p-listbox-list .p-listbox-item.p-highlight,
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus,
+.p-datatable .p-sortable-column:focus,
+.p-button:focus,
+.p-inputtext:enabled:focus,
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus,
+.p-dropdown:not(.p-disabled).p-focus,
+.p-datepicker:focus,
+.p.p-listbox:focus {
+  box-shadow: 0 0 0 0.125rem #00ffff;
+}
+
+.p-datatable-scrollable-body,
+.p-datatable-unfrozen-view .p-datatable-scrollable-body {
+  padding-bottom: 0.5rem;
+}
+
+.card-height {
+  height: 100px;
+  margin-right: 50px;
+}
+
+.p-card {
+  background: #ffffff;
+  color: #d9d9d9;
+  box-shadow: none;
+  border: 1px solid;
+  border-radius: 0px;
+  height: 8rem;
+}
+
+.user-style {
+  color: black;
+  font-size: 100%;
+  float: left;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin: 10px 5px 20px 5px;
+}
+
+.width-layout {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.p-accordion
+  .p-accordion-header
+  .p-accordion-header-link
+  .p-accordion-toggle-icon {
+  margin-top: -8px;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled).p-highlight
+  .p-accordion-header-link {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled).p-highlight:hover
+  .p-accordion-header-link {
+  border-color: #00ffff;
+  background: #7f7f7f;
+  color: #fff;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-highlight):not(.p-disabled):hover
+  .p-accordion-header-link {
+  background: #7f7f7f;
+  border-color: #00ffff;
+  color: #fff;
+}
+
+.p-accordion p-accordiontab .p-accordion-tab {
+  margin-bottom: 10px;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d9d9d9;
+  background: #d9d9d9;
+  font-weight: 600;
+  border-radius: 0px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-size: 1.5rem;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled)
+  .p-accordion-header-link:focus {
+  background: #7f7f7f;
+  color: #fff;
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.1rem #00ffff;
+}
+.accordian-height {
+  /* the div needs to be AT LEAST 100% of the height of the window */
+  min-height: calc(100vh - 20px);
+  /* now that it is 100% the height, we 'pull' the footer up */
+}
+
+.adjut-height {
+  overflow: hidden;
+}
+
+.container {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+.container .btn-holder {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.p-card .p-card-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #595959;
+}
+
+.p-card .p-card-subtitle {
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+  color: #595959;
+  font-size: 0.9rem;
+}
+
+.p-card .p-card-content {
+  padding: 0rem 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 0rem;
+  color: #595959;
+}
+
+.p-card .p-card-body {
+  padding: 0.25rem 0.75rem;
+}
+
+.p-accordion .p-accordion-content {
+  padding: 0.25rem 0.75rem;
+  color: #02083c;
+}
+
+.p-splitbutton .p-menu {
+  width: 100%;
+  background-color: #ffffff;
+  color: #02083c;
+  border-color: #02083c;
+  border-radius: 0;
+}
+
+.p-menu ul {
+  height: 100%;
+}
+
+.p-menu .p-menuitem,
+.p-menu .p-menuitem-link {
+  width: 100%;
+  justify-content: center;
+}
+
+.p-splitbutton > button.p-splitbutton-defaultbutton,
+.p-splitbutton > button.p-splitbutton-menubutton,
+.p-button[label="Cancel"],
+.p-button[label="Close"],
+.p-button[ng-reflect-label="Cancel"],
+.p-button[ng-reflect-label="Close"],
+.p-button[label="Add another subject"],
+.p-button[label="Download Exclusions"],
+.p-button[label="Find and add a user"],
+.p-datepicker-trigger.p-button,
+.p-inputnumber-buttons-stacked
+  .p-inputnumber-button-group
+  .p-button.p-inputnumber-button {
+  background-color: #ffffff;
+  color: #02083c;
+  border-color: #02083c;
+}
+
+.required-field-disclaimer {
+  padding: 0.2rem 0 0.5rem 0;
+}
+
+.padding-left-zero {
+  padding-left: 0;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 5px;
+}
+
+.padding-bottom-a-rem {
+  padding: 0 0 1rem 0;
+}
+
+.padding-zero {
+  padding: 0;
+}
+
+.margin-bottom-half-rem {
+  margin: 0 0 0.5rem 0;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.input-number-width input {
+  width: 5rem;
+}
+
+.p-inputnumber-buttons-stacked .p-inputnumber-input {
+  width: 4rem;
+  border-radius: 0;
+}
+
+.p-calendar {
+  width: 100%;
+  margin: 0.25rem 0;
+  border-radius: 0;
+  height: 3rem;
+}
+
+.p-datepicker table td {
+  padding: 0;
+}
+
+.p-datepicker table td > span.p-highlight {
+  color: #02083c;
+  background: #fde444;
+}
+
+.p-datepicker {
+  padding: 0rem;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+
+.p-datepicker:not(.p-datepicker-inline) {
+  background: #ffffff;
+  box-shadow: 0;
+}
+
+.p-datepicker .p-datepicker-header {
+  font-weight: 600;
+}
+
+.p-datepicker table {
+  font-size: 0.85rem;
+  margin: 0;
+}
+.p-datepicker table td > span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+label {
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.p-inputtext {
+  border: 1px solid #a6a6a6;
+  border-radius: 0px;
+  height: 3rem;
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #02083c;
+}
+
+.p-inputtext-searchfield {
+  width: 15rem;
+}
+
+.p-inputnumber {
+  background: #ffffff;
+  border-radius: 0px;
+  height: 3rem;
+}
+
+.p-multiselect,
+.p-dropdown {
+  height: 3rem;
+  font-size: 0.8rem;
+  background: #ffffff;
+  border: 1px solid #a6a6a6;
+  border-radius: 0px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.p-table {
+  padding-bottom: 0.5rem;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #d5d5d5;
+}
+
+.mydialog {
+  width: 50vw;
+}
+
+.p-dropdown-label {
+  padding: 0.8rem 0.4rem;
+}
+
+.p-paginator .p-dropdown .p-dropdown-label {
+  padding: 0.4rem;
+}
+
+.p-inputtext .p-placeholder {
+  color: #d9d9d9;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  background: #1c798e;
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item,
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  padding: 0.1rem 0.5rem;
+}
+.p-listbox:not(.p-disabled)
+  .p-listbox-item:not(.p-highlight):not(.p-disabled):hover {
+  background: #eaeaea;
+}
+
+.p-listbox .p-listbox-list .p-listbox-item {
+  color: #02083c;
+}
+
+.p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+  background: #d9d9d9;
+  color: #02083c;
+}
+
+.padding-left-half-rem {
+  padding-left: 0.5rem;
+}
+
+.p-checkbox,
+.p-checkbox .p-checkbox-box {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  border: 1px solid black !important;
+  background: #ffffff;
+}
+
+.header-width-small {
+  width: 10%;
+}
+
+.header-width-large {
+  width: 16%;
+}
+
+.margin-left-75 {
+  margin-left: 0.75rem;
+}
+
+.margin-left-125 {
+  margin-left: 1.25rem;
+}
+
+.margin-left-3REM {
+  margin-left: 3rem;
+}
+
+.margin-padding-bottom-0 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.progress-spinner {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.p-progress-spinner-circle {
+  animation: none !important;
+  stroke: blue !important;
+}
+
+large-button-width {
+  width: 225px;
+}
+
+button-width-auto {
+  width: auto;
+}
+
+.p-dialog .p-dialog-footer button {
+  width: 175px;
+}
+
+.p-inputnumber-buttons-stacked
+  .p-inputnumber-button-group
+  .p-button.p-inputnumber-button {
+  min-width: 25px;
+}
+
+.p-calendar-w-btn .p-datepicker-trigger {
+  min-width: 25px;
+}
+
+.table-width-small {
+  width: 5%;
+}
+
+.table-width-medium {
+  width: 10%;
+}
+
+.table-width-large {
+  width: 15%;
+}
+
+.p-paginator .p-paginator-current {
+  color: #02083c;
+}
+
+.fields-separation {
+  padding-right: 1.4rem;
+}
+
+.brand-bar {
+  float: left;
+  height: 3.5rem;
+  width: 0.5rem;
+  background-color: #00ffff;
+}
+
+.purple-brand-bar {
+  float: left;
+  height: 4rem;
+  width: 0.25rem;
+  background-color: #9862c3;
+}
+
+.brand-image {
+  width: 12rem;
+  margin: -0.938rem 0 -0.938rem -0.938rem;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled).p-highlight
+  .p-accordion-header-link {
+  color: #02083c;
+  background: #d9d9d9;
+}
+
+.overflow-wrap {
+  overflow-wrap: break-word;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.hide-horizontal-scroll {
+  overflow-x: hidden;
+}
+
+.button-zoom-support {
+  height: 100%;
+  max-width: 100%;
+  min-width: auto;
+}
+
+.number-right-align {
+  text-align: right !important;
+  padding-right: 30px !important;
+}
+
+.number-header-right-align {
+  text-align: right !important;
+  padding-right: 20px !important;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.button-save-zoom-support {
+  white-space: nowrap;
+  text-align: right !important;
+}
+
+@media screen and (max-width: 960px) {
+  .p-menubar .p-menubar-root-list {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .p-menubar .p-menubar-root-list .p-menu-separator {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+    right: 0;
+    left: auto;
+  }
+}
+
+.p-progress-spinner {
+  position: relative;
+  z-index: 999;
+  height: 100px !important;
+  width: 100px !important;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.p-progress-spinner-circle {
+  animation: none !important;
+  stroke: #00ffff !important;
+  height: 100%;
+  width: 100%;
+}
+
+.padding-top-2 {
+  padding-top: 2rem;
+}
+
+.margin-top-half-rem {
+  margin: 0.5rem 0 0 0;
+}
+
+.padding-top-a-rem {
+  padding: 1rem 0 0 0;
+}
+
+.p-calendar-w-btn .p-datepicker-trigger {
+  height: 3rem;
+  width: 3rem;
+}
+
+.p-calendar {
+  height: 3rem;
+  margin: 0;
+}
+
+.margin-top-buttons {
+  margin-top: 2rem;
+}
+
+.calendar-size .ui-widget-content {
+  width: 50%;
+  height: 50%; // or in pixel depends how much width you want.
+}
+
+.p-calendar .p-datepicker {
+  top: -190% !important;
+  left: 100% !important;
+}
+
+.p-datepicker .p-timepicker {
+  padding: 0px !important;
+}
+.p-datepicker .p-timepicker button {
+  height: 1.5rem !important;
+}
+
+.margin-one-half-rem {
+  margin: 1.25rem;
+}
+
+.p-disabled,
+.p-component:disabled {
+  opacity: 0.8;
+}
+
+.p-datepicker table td.p-datepicker-today > span.p-highlight {
+  background: #fde444;
+  color: #02083c;
+}
+
+.p-datepicker table td > span:focus {
+  box-shadow: 0 0 0 0.2rem #fde444;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
