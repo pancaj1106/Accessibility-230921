@@ -1,0 +1,131 @@
+<p-table
+  [value]="filteredUsers"
+  class="checkboxSelectionTable"
+  dataKey="userId"
+  editMode="row"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th
+        class="align-left width-fifteen"
+        [pSortableColumn]="'firstName'"
+        scope="col"
+      >
+        First Name<p-sortIcon [field]="'firstName'"> </p-sortIcon>
+      </th>
+      <th
+        class="align-left width-fifteen"
+        [pSortableColumn]="'familyName'"
+        scope="col"
+      >
+        Last Name<p-sortIcon [field]="'familyName'"> </p-sortIcon>
+      </th>
+      <th class="align-left width-thirty" scope="col">Email Address</th>
+      <th
+        class="align-left width-twenty-two"
+        [attr.ariaHidden]="true"
+        scope="col"
+      ></th>
+    </tr>
+  </ng-template>
+  <ng-template
+    pTemplate="body"
+    let-user
+    let-editing="editing"
+    let-ri="rowIndex"
+  >
+    <tr [pEditableRow]="user" class="overflow-wrap vertical-align-top">
+      <td class="align-left width-fifteen">
+        <div>
+          <p-cellEditor>
+            <ng-template pTemplate="input">
+              <input
+                class="full-width"
+                pInputText
+                type="text"
+                [(ngModel)]="user.firstName"
+                pattern=".*\S+.*"
+                required
+                #firstName="ngModel"
+                aria-label="First Name"
+              />
+            </ng-template>
+            <ng-template pTemplate="output">
+              {{ user.firstName }}
+            </ng-template>
+          </p-cellEditor>
+        </div>
+      </td>
+      <td class="align-left width-fifteen">
+        <p-cellEditor>
+          <ng-template pTemplate="input">
+            <input
+              class="full-width"
+              pInputText
+              type="text"
+              [(ngModel)]="user.familyName"
+              required
+              pattern=".*\S+.*"
+              #familyName="ngModel"
+              aria-label="Family Name"
+            />
+          </ng-template>
+          <ng-template pTemplate="output">
+            {{ user.familyName }}
+          </ng-template>
+        </p-cellEditor>
+      </td>
+      <td class="align-left width-thirty">
+        <p-cellEditor>
+          <ng-template pTemplate="input">
+            <input
+              class="full-width"
+              pInputText
+              type="text"
+              [(ngModel)]="user.email"
+              email
+              #email="ngModel"
+              aria-label="Email"
+              coreDuplicateFieldValidator
+              required
+              [ngModelOptions]="{ updateOn: 'blur' }"
+            />
+          </ng-template>
+          <ng-template pTemplate="output">
+            {{ user.email }}
+          </ng-template>
+        </p-cellEditor>
+      </td>
+      <td class="width-twenty-two button-save-zoom-support">
+        <button
+          *ngIf="!editing"
+          pButton
+          type="button"
+          pInitEditableRow
+          icon="pi pi-pencil"
+          title="Edit User Details"
+          class="ui-button-info"
+          (click)="onRowEditInit(user)"
+        ></button>
+        <button
+          *ngIf="editing"
+          pButton
+          type="button"
+          pSaveEditableRow
+          icon="pi pi-check"
+          class="ui-button-success margin-right-custom"
+          title="Save User Details"
+        ></button>
+        <button
+          *ngIf="editing"
+          pButton
+          type="button"
+          pCancelEditableRow
+          icon="pi pi-times"
+          class="ui-button-danger"
+          title="Cancel User Details"
+        ></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
