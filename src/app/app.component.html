@@ -1,0 +1,58 @@
+<div class="padding-10">
+  <nav role="navigation">
+    <button
+      pButton
+      type="button"
+      label="Dropdown Issue"
+      class="p-button-link"
+      (click)="updateStatus(true, false, false, false, false)"
+    ></button>
+    <button
+      pButton
+      type="button"
+      label="Calendar issue"
+      class="p-button-link"
+      (click)="updateStatus(false, false, false, false, true)"
+    ></button>
+    <button
+      pButton
+      type="button"
+      label="Paginator issue"
+      class="p-button-link"
+      (click)="updateStatus(false, false, true, false, false)"
+    ></button>
+    <button
+      pButton
+      type="button"
+      label="Inline editing issue"
+      class="p-button-link"
+      (click)="updateStatus(false, true, false, false, false)"
+    ></button>
+    <button
+      pButton
+      type="button"
+      label="Split button issue"
+      class="p-button-link"
+      (click)="updateStatus(false, false, false, true, false)"
+    ></button>
+  </nav>
+</div>
+<main role="main">
+  <div class="p-col-4 padding-10 margin-left-20">
+    <app-dropdown-issue *ngIf="isDropdown"></app-dropdown-issue>
+  </div>
+  <div class="p-col-11 padding-10 margin-left-20">
+    <app-inline-editing *ngIf="isInlineedit"></app-inline-editing>
+  </div>
+
+  <div class="p-col-11 padding-10 margin-left-20">
+    <app-paginator-issue *ngIf="isPaginator"></app-paginator-issue>
+  </div>
+  <div class="p-col-4 padding-10 margin-left-20">
+    <app-calendar-issue *ngIf="isCalendar"></app-calendar-issue>
+  </div>
+
+  <div class="p-col-4 padding-10 margin-left-20">
+    <app-split-button-issue *ngIf="isSplitButton"></app-split-button-issue>
+  </div>
+</main>
