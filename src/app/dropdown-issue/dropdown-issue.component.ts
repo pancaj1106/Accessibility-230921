@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Dropdown } from 'primeng/dropdown';
 
 @Component({
   selector: 'app-dropdown-issue',
@@ -15,10 +16,15 @@ export class DropdownIssueComponent implements OnInit {
       description: 'Appeal meeting'
     },
   ];
-
+  @ViewChild('dropdown') dropdownToFocus: Dropdown | undefined;
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      if(this.dropdownToFocus !== null){
+        this.dropdownToFocus?.focus();
+      }
+    }, 500);
   }
 
 }
