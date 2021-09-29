@@ -1,11 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Dropdown } from 'primeng/dropdown';
 
 @Component({
   selector: 'app-dropdown-issue',
   templateUrl: './dropdown-issue.component.html'
 })
-export class DropdownIssueComponent implements OnInit {
+export class DropdownIssueComponent implements OnInit, AfterViewInit {
   meetingTypeCollection = [
     {
       value: 'Meeting',
@@ -20,11 +20,13 @@ export class DropdownIssueComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      if(this.dropdownToFocus !== null){
-        this.dropdownToFocus?.focus();
-      }
-    }, 500);
+
+  }
+
+  ngAfterViewInit(): void {
+    if(this.dropdownToFocus !== null){
+      this.dropdownToFocus?.focus();
+    }
   }
 
 }
