@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'acc-primeng-issues';
-  isDropdown: boolean = false;
+  isDropdown: boolean = true;
   isInlineedit: boolean = false;
   isPaginator: boolean = false;
   isSplitButton: boolean = false;
